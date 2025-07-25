@@ -1,0 +1,295 @@
+* {
+  margin: 0px;
+  padding-top: 0px;
+  box-sizing: border-box;
+  font-family: Times, "Times New Roman", Georgia, serif;
+}
+.Main-Page {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/the-town-bg-01.4fb1a448e9b51ceb326a.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.Main-Page .Top-Section {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+}
+.right {
+  display: flex;
+  gap: 1.5em;
+}
+.left a,
+.right a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+.left a:hover,
+.right a:hover,
+.right a span,
+.Middle-Section p span {
+  color: #4169e1;
+}
+.Main-Page .Middle-Section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 72%;
+  gap: 1.2em;
+  color: white;
+  font-weight: bolder;
+}
+
+.Middle-Section h1 {
+  font-size: 3em;
+}
+
+@media screen and (max-width: 661px) {
+  .Main-Page .Top-Section .right {
+    flex-direction: column;
+  }
+  .Main-Page .Middle-Section {
+    height: 30%;
+  }
+}
+.Second-Page {
+  display: flex;
+  margin: 4.5em;
+  padding: 1.5em;
+  gap: 1.5em;
+}
+.Second-Page .image img {
+  width: 80%;
+}
+.Second-Page .Text-Section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.3em;
+  width: 30%;
+}
+.Second-Page .Text-Section h1 {
+  color: #4169e1;
+}
+.Second-Page .Text-Section p {
+  color: #777;
+}
+.Second-Page .Text-Section a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.Second-Page .Text-Section button {
+  padding: 1em;
+  border-radius: 2em;
+  background-color: #007bff;
+  border: 0em;
+  color: white;
+  cursor: pointer;
+}
+.Second-Page .Text-Section button:hover {
+  background-color: #0056b3;
+  transition: 0.3s ease;
+}
+.Second-Page .Text-Section a:hover {
+  color: #0056b3;
+  transition: 0.3s ease;
+}
+.Second-Page .Text-Section button:active {
+  background-color: #0056b3;
+  transition: 0.3s ease;
+}
+@media (max-width: 991px) {
+  .Second-Page {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0em;
+    gap: 1em;
+    text-align: center;
+  }
+  .Second-Page .Text-Section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.Work-Section {
+  background-image: linear-gradient(180deg, #e3987f, #5c648c);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1em;
+}
+
+.First,
+.Second,
+.Third {
+  margin: 3em;
+  text-align: center;
+}
+.First h1,
+.Second h1,
+.Third h1 {
+  color: white;
+  margin-bottom: 0.5em;
+}
+.First a,
+.Second a,
+.Third a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  color: #0056b3;
+}
+.First p,
+.Second p,
+.Third p {
+  color: #cdc1c1;
+  margin-top: 1em;
+}
+
+@media screen and (max-width: 991px) {
+  .Work-Section {
+    flex-direction: column;
+  }
+}
+.Our-Work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3em;
+}
+.Our-Work h1 {
+  margin-bottom: 0.3em;
+  color: #4169e1;
+  font-size: 2.5em;
+}
+.Our-Work p {
+  color: #666;
+}
+.images-Section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+.Image {
+  width: 200px;
+  height: 200px;
+}
+.Image img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.Image img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 991px) {
+  .images-Section {
+    flex-direction: column;
+  }
+}
+
+.Footer-Section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/the-town-bg-02.d00ce147e8572c7e554e.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 3.5em;
+}
+
+.Footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.5em;
+}
+.Middle p {
+  font-size: 1.2em;
+}
+
+.mid-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 2em;
+}
+.Left-Sec,
+.Right-Sec {
+  display: flex;
+  flex-direction: column;
+  gap: 4.5em;
+  font-weight: bolder;
+}
+.mid-sec .Right-Sec input,
+::placeholder {
+  padding: 1em;
+  border-radius: 1em;
+  background: none;
+  border-color: white;
+  color: white;
+}
+.mid-sec .Left-Sec a {
+  text-decoration: none;
+  color: white;
+}
+.mid-sec .Right-Sec .submit {
+  background-color: white;
+  color: #0056b3;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.Last {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.5em;
+}
+.Last span {
+  color: #0056b3;
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 991px) {
+  .Footer-Section {
+    height: auto;
+    padding: 2em;
+  }
+  .Footer {
+    flex-direction: column;
+    height: auto;
+  }
+  .mid-sec {
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .Left-Sec,
+  .Right-Sec {
+    align-items: center;
+  }
+  .Right-Sec form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+}
